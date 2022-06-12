@@ -31,6 +31,7 @@ pool.connect((err, client, release)=>{
         console.log("Connect to Database ")
     })
    
+    
 })
 app.get('/alunos', (req, res, next)=>{
     pool.query('Select * from aluno')
